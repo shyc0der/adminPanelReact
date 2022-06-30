@@ -15,24 +15,26 @@ const Sidebar = () => {
       <div className='center'>
         <ul>
           <li>
-            <p className='title'>MAIN</p>
-            <DashboardIcon/>
+            <p className='title'>MAIN</p></li>
+            <li>
+            <DashboardIcon className='icon'/>
             <span>Dash Board</span>
-          </li><li>
-          <p className='title'>Users</p>
-            <GroupIcon/>
+          </li><p className='title'>Users</p><li>          
+            <GroupIcon className='icon'/>
             <span>Users</span>
-          </li><li>
-          <p className='title'>LIST</p>
-         <LibraryBooksIcon/>
+          </li><p className='title'>LIST</p><li>          
+         <LibraryBooksIcon className='icon'/>
             <span>Orders</span>
           </li><li>
-         <Inventory2Icon/>
+         <Inventory2Icon className='icon'/>
             <span>Products</span>
           </li>
         </ul>
       </div>
-      <div className='bottom'>color options</div>     
+      <div className='bottom'>
+        <div className='colorOptions'></div>
+        <div className='colorOptions'></div>
+        </div>     
     </div>
   );
 }
